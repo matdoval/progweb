@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+		 https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"></script>
+
+	<script>
+	  // Your web app's Firebase configuration
+	  var firebaseConfig = {
+		apiKey: "AIzaSyDrLMoV2Ag24sTXwmI_l-eaC4pqeiyatvc",
+		authDomain: "doval-2020.firebaseapp.com",
+		databaseURL: "https://doval-2020.firebaseio.com",
+		projectId: "doval-2020",
+		storageBucket: "doval-2020.appspot.com",
+		messagingSenderId: "580048359447",
+		appId: "1:580048359447:web:bfca79f644414537f68c52",
+		measurementId: "G-1VCME8HDZ6"
+	  };
+	  // Initialize Firebase
+	  firebase.initializeApp(firebaseConfig);
+	  firebase.analytics();
+	</script>
+
+    <!-- Coloque após a inicialização do firebase -->
+    <script src="js/functions.js"></script>
+    
+    <link rel="stylesheet" href="css/style.css"/>
+    
+    <title>Ulisses</title>
+  </head>
+  <body>
+
+    <hr/>
+    <div id="header_form" class="closed">
+    <form id = "login_form">
+      <p>
+        <label>Email: <input type="text" name="email" id="email"/></label>
+      </p>
+      <p>
+        <label>Senha:<input type="password" name="senha" id="senha"/>
+      </p>
+      <p>
+        <button type="submit" onclick="return submitAuthentication(event)">Login</button>
+	<button type="submit" onclick="return submitRegistro(event)">Cadastrar</button>
+      </p>
+      
+    </form>
+    </div>
+    <div id="logged_user" class="open">
+      <p>Autenticado: <span id="user_span">Usuário</span></p>
+      <p><a onclick="signOut()">Sign-out</a>
+    </div>
+    <hr/>
+    
+    <h1>Fale comigo:</h1>
+    <form id = "contactForm">
+      <p>
+	<label>Name: <input type="text" name="name" id="name"/></label>
+      </p>
+      <p>
+	<label>Company:<input type="text" name="company" id="company"/>
+      </p>
+      <p>
+	<label>Email:<input type="email" name="email"/>
+      </p>
+      <p>
+	<label>Phone:<input type="text" name="phone" id="phone"/>
+      </p>
+      <p>
+	<label>Message:</br><textarea name="message" rows="5" id="message">
+	    </textarea>
+	</label>
+      </p>
+      <p>
+	<button type="submit" onclick="return submitForm()">Submit</button>
+      </p>
+    </form>
+    
+    <div class="closed" id="confirm">Your Message has been sent!</div>
+
+    <hr/>
+
+    <form id="sayHello">
+      <p>
+	<label>Name: <input type="text" name="name" id="name"/></label>
+      </p>
+      <p>
+	<button type="submit" onclick="return sayHelloToFirebase()">SayHello</button>
+      </p>
+    </form>    
+  </body>  
+</html>
