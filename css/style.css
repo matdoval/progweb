@@ -1,0 +1,12 @@
+.closed {
+    display: none;
+}
+
+.open{
+    display: block;
+}
+
+a{
+    text-decoration:underline;
+    cursor:pointer;
+}
