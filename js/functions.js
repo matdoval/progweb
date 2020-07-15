@@ -155,3 +155,17 @@ function submitRegistro(e){
 	alert(error.message);
     });
 }
+
+// Your web app's Firebase configuration
+var firebaseConfig = {
+		apiKey: "AIzaSyDrLMoV2Ag24sTXwmI_l-eaC4pqeiyatvc",
+		authDomain: "doval-2020.firebaseapp.com",
+		databaseURL: "https://doval-2020.firebaseio.com",
+		projectId: "doval-2020",
+		storageBucket: "doval-2020.appspot.com",
+		messagingSenderId: "580048359447",
+		appId: "1:580048359447:web:bfca79f644414537f68c52",
+		measurementId: "G-1VCME8HDZ6"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
