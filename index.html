@@ -15,29 +15,6 @@
     <title>Ulisses</title>
   </head>
   <body>
-
-    <hr/>
-    <div id="header_form" class="closed">
-    <form id = "login_form">
-      <p>
-        <label>Email: <input type="text" name="email" id="email"/></label>
-      </p>
-      <p>
-        <label>Senha:<input type="password" name="senha" id="senha"/>
-      </p>
-      <p>
-        <button type="submit" onclick="return submitAuthentication(event)">Login</button>
-	<button type="submit" onclick="return submitRegistro(event)">Cadastrar</button>
-      </p>
-      
-    </form>
-    </div>
-    <div id="logged_user" class="open">
-      <p>Autenticado: <span id="user_span">Usuário</span></p>
-      <p><a onclick="signOut()">Sign-out</a>
-    </div>
-    <hr/>
-    
     <h1>Fale comigo:</h1>
     <form id = "contactForm">
       <p>
@@ -63,16 +40,5 @@
     </form>
     
     <div class="closed" id="confirm">Your Message has been sent!</div>
-
-    <hr/>
-
-    <form id="sayHello">
-      <p>
-	<label>Name: <input type="text" name="name" id="name"/></label>
-      </p>
-      <p>
-	<button type="submit" onclick="return sayHelloToFirebase()">SayHello</button>
-      </p>
-    </form>    
   </body>  
 </html>
