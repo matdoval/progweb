@@ -1,21 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-
+<head>
+	<meta charset="UTF-8">
 	<!-- The core Firebase JS SDK is always required and must be listed first -->
 	<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-database.js"></script>
 
     <!-- Coloque após a inicialização do firebase -->
     <script src="js/functions.js"></script>
-    
-    <link rel="stylesheet" href="css/style.css"/>
-    
-    <title>Doval</title>
-  </head>
-  <body>
-    <h1>Fale comigo:</h1>
+	<script src="js/codigo.js"></script>
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/Aula4.css"/>
+	<title>Matheus</title>
+</head>
+<body>
+	<h1>Matheus Doval Dominato</h1>
+	<p class="centro"><img src="matheus_doval.jpg" width="110" height="100" /></p>
+	<p class="centro">Rua Jasmim, 750, CAMPINAS/SP - CEP:13087-460 <br /> Email: matheusdovald@hotmail.com <br /> Celular: (19) 98337-7401 / Telefone: (19) 3633-4448</p>
+	<h2>Objetivo</h2>
+	<p>Atuar na &aacute;rea de engenharia</p>
+	<h2>Informa&ccedil;&otilde;es a meu respeito...</h2>
+	<p>Meu nome &eacute; <a href="https://www.instagram.com/matheusdoval/"> Matheus </a>, tenho 26 anos, nasci no dia 23 de Fevereiro de 1994, na cidade de <a href="https://www.saojoao.sp.gov.br/"> S&atilde;o Jo&atilde;o da Boa Vista </a> no interior de S&atilde;o Paulo e morei nos &uacute;ltimos 6 anos em <a href="https://www.limeira.sp.gov.br/sitenovo/"> Limeira </a> onde estou cursando Engenharia de Telecomunica&ccedil;&otilde;es na <a href="https://www.ft.unicamp.br/">UNICAMP</a>. Sou uma pessoa que gosta de conhecer novos lugares, pessoas, busco sempre o aprendizado em cursos, livros e sou uma pessoa com capacidade de lideran&ccedil;a e muito proativa, por esse motivo estou sempre buscando evoluir mais para ser um &oacute;timo profissional.</p>
+	<details><summary><b>Habilidades</summary></b>
+	<p><strong>Inglês indermediário<br>
+	Espanhol intermediário<br>
+	Pacote Office: Excel, Word e Power Point</details></p></strong>
+	<h2>Experiências na graduação...</h2>
+	<p>No per&iacute;odo da faculdade participei de um projeto de <a href="https://www.teleco.com.br/tutoriais/tutorialblaserv/"> banda larga móvel</a>, avaliando indicadores como a Taxa de downstream, Taxa de upstream e Lat&ecirc;ncia para as operadoras Vivo, Claro, Tim e Oi na cidade de <a href="http://https:www.limeira.sp.gov.br/sitenovo/"> Limeira </a>. Este projeto serviu para analisar qual operadora era melhor em cada regi&atilde;o da cidade.<BR> Apresentei a primera parte do TCC com conceitos de Holografia Digital e a segunda parte foquei em an&aacute;lise de interfer&ocirc;metro de Lloyd utilizando espelho piezoel&eacute;trico para para caracteriza&ccedil;&atilde;o de materiais fotossens&iacute;veis. Participei e ajudei uma organiza&ccedil;&atilde;o volunt&aacute;ria na ONG Amor de Bicho. <a href="https://www.facebook.com/amordebichocampinas/">Quero conhecer!</a> <br>Participa&ccedil;&otilde;es em feiras pela universidade.<a href="https://www.unicamp.br/unicamp/eventos/2018/08/14/talento-unicamp-sedia-maior-feira-de-recrutamento-do-estado-de-sao-paulo/">Saiba mais...</a></p>
+	<h2>Experiências profissionais...</h2>
+	<p>No per&iacute;odo da faculdade realizei est&aacute;gio na empresa <a href="https://www.ibec.com.br/"> IBEC</a> (Instituo Brasileiro de Ensaios e Conformidade), avaliando equipamentos com seguimentos para certifica&ccedil;&atilde;o.</p>
+	
+	<h3>Fale comigo:</h3>
     <form id = "contactForm">
       <p>
 	<label>Name: <input type="text" name="name" id="name"/></label>
@@ -40,5 +55,21 @@
     </form>
     
     <div class="closed" id="confirm">Your Message has been sent!</div>
-  </body>  
+	
+	<footer>
+		<center>Matheus Doval Dominato</center>
+		<center><a href="https://linkedin.com/in/matheusdovald/">LinkedIn</a></center>
+		
+		<h2>Anexos</h2>
+			<center>
+				<img class="pequena" onmouseout="undisplayPicture(this)" onmouseover="displayPicture(this)" alt="Criança" src="1.jpg"/>
+				<img class="pequena" onmouseout="undisplayPicture(this)" onmouseover="displayPicture(this)" alt="Adolescência" src="2.jpg"/>
+				<img class="pequena" onmouseout="undisplayPicture(this)" onmouseover="displayPicture(this)" alt="Atual" src="3.jpg"/>
+			</center>
+			
+			<div id="frame" class="frame">
+				<span id="texto">Passe o mouse em cima de uma imagem</span>
+			</div>
+	</footer>
+</body>
 </html>
